@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1 id="main-header">THAT'S JUST GRAVY!!!</h1>
+<h2>The #1 website for all Gravy Lovers and their knowledge of Gravy</h2>
+<p>Below you will find our tip of the day!</p>
+<body>
+<h3>Welcome, Enter The User Details</h3>
+
+<form action ="#"th:action="@{/addUser}" th:object="${user}" method="post">
+    <table>
+
+        <tr>
+            <td><label path="email">Email</label></td>
+            <td><input type="text" name="email" /></td>
+        </tr>
+
+        <tr>
+            <td><label path="username">Username</label></td>
+            <td><input type="text" name="id"  /></td>
+        </tr>
+
+        <tr>
+            <td><label path="password">Password</label></td>
+            <td><input type="text" name="password" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+</form>
+
+<div class="container">
+    <form action="#" th:action="@{/login}"  method="post">
+        <h2 >Please sign in</h2>
+        <p>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username"  name="username" class="form-control" placeholder="Username" required="" autofocus="">
+        </p>
+        <p>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+        </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+</body>
+</html>
