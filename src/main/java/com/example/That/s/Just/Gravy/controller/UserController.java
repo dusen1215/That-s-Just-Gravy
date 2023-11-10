@@ -32,11 +32,8 @@ public class UserController {
     @PostMapping("/addUser")
     public String processForm(@ModelAttribute("user") User user, ModelMap model) {
 
-            model.addAttribute("username", user.getUsername());
-            model.addAttribute("password", user.getPassword());
-            model.addAttribute("email", user.getEmail());
 
             userService.addUser(user);
-            return "userView";
+            return "index";
     }
 }

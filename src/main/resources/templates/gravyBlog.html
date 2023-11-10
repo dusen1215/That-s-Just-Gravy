@@ -3,16 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <nav>
-        <ul>
-            <li><a href="gravy-blog.html">Gravy Blog</a></li>
-            <li><a href="gravy-club.html">On the gravy train</a></li>
-            <li><a href="gravy-gatherings.html">Gravy Gatherings</a></li>
-            <li><a href="gravy-past.html">Test of time with the Gravy</a></li>
-            <li><a href="gravy-winner.html">Recipe of the week</a></li>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-    </nav>
 </head>
 <h1 id="main-header">Share your recipes, thoughts, stories all about gravy here! and we will process and get them ready.</h1>
 <p>Stuff for gravy</p>
@@ -23,7 +13,7 @@
     <input type="submit" value="Submit"/></td>
 
 </form>
-</form>
+
 <form action ="#"th:action="@{/addCustomRecipe}" th:object="${customRecipe}" method="post">
 
     <label path="customRecipe">Custom Gravy Recipe</label>
@@ -33,6 +23,6 @@
 </form>
 <p>Below you will find our tip of the day!</p>
 <body>
-
+<div th:replace="~{fragments/navigation :: navigation}"></div>
 </body>
 </html>
