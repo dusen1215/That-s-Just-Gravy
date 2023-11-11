@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<form action ="#" th:action="@{/addCustomRecipe}" th:object="${cr}" method="post">
+
+    <label path="customRecipe">Custom Gravy Recipe</label>
+    <input type="text" name="customRecipe" style="height:200px; width: 200px;" >
+    <input type="submit" value="Submit"/>
+
+</form>
+
+<body>
+<div th:replace="~{fragments/navigation :: navigation}"></div>
+</body>
+</html>

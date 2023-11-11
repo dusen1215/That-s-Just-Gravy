@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <h1 id="main-header">Share your recipes, thoughts, stories all about gravy here! and we will process and get them ready.</h1>
 <p>Stuff for gravy</p>
-<form action ="#"th:action="@{/addGravyRecipe}" th:object="${gravyRecipe}" method="post">
+<form action ="#" th:action="@{/addGravyRecipe}" th:object="${gr}" method="post">
 
     <label path="gravyRecipe">Gravy Recipe</label>
-    <input type="text" name="gravyRecipe" style="height:200px; width: 200px;" >
-    <input type="submit" value="Submit"/></td>
-
+        <input type="text" name="gravyRecipe">
+        <input type="submit" value="Submit"/>
 </form>
 
-<form action ="#"th:action="@{/addCustomRecipe}" th:object="${customRecipe}" method="post">
 
-    <label path="customRecipe">Custom Gravy Recipe</label>
-    <input type="text" name="customRecipe" style="height:200px; width: 200px;" >
-    <input type="submit" value="Submit"/></td>
-
-</form>
 <p>Below you will find our tip of the day!</p>
 <body>
 <div th:replace="~{fragments/navigation :: navigation}"></div>

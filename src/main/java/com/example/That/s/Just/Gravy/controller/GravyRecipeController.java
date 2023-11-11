@@ -20,7 +20,7 @@ public class GravyRecipeController {
     private GravyRecipeServices gravyRecipeService;
     private Map<Long, GravyRecipe> gravyRecipeMap = new HashMap<>();
 
-    @GetMapping("/gravy-blog")
+   @GetMapping("/gravyBlog")
     public String gravyForm(Model model) {
 
 
@@ -30,10 +30,11 @@ public class GravyRecipeController {
     }
 
     @PostMapping("/addGravyRecipe")
-    public String gravyprocessForm(@ModelAttribute("gravyRecipe") GravyRecipe gravyRecipe, ModelMap model) {
+    public String gravyProcessForm(@ModelAttribute("cr") GravyRecipe gravyRecipe, ModelMap model) {
+
 
         gravyRecipeService.addGravyRecipe(gravyRecipe);
-        return "gravyBlog";
+        return "index";
     }
 
 }

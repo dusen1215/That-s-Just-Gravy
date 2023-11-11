@@ -1,20 +1,21 @@
 package com.example.That.s.Just.Gravy.controller;
 
+import com.example.That.s.Just.Gravy.DTO.GravyRecipeDTO;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
 
 @Controller
 public class NavController {
-    @GetMapping ("/index")
+    @GetMapping("/index")
     public String getIndex(){
         return "index";
     }
 
-    @GetMapping ("/gravyBlog")
-    public String getBlog(){
+    /*@GetMapping ("/gravyBlog")
+    public String getBlog(Model model){
         return "gravyBlog";
-    }
+    }*/
 
     @GetMapping ("/gravyClub")
     public String getClub(){
@@ -35,4 +36,9 @@ public class NavController {
     public String getWinner(){
         return "gravyWinner";
     }
+
+    /*@GetMapping ("/gravyTime")
+    public String getTime(){
+        return "gravyTime";
+    }*/
 }

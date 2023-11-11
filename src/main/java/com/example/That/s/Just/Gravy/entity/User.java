@@ -24,20 +24,6 @@ public class User {
     @Column(name = "validated")
     private boolean validated;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "user&roles", joinColumns = @JoinColumn(name = "userid"),
-            inverseJoinColumns = @JoinColumn(name = "roleid"))
-    private Collection<Role> roles;
-
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "user&gravy", joinColumns = @JoinColumn(name = "userid"),
-            inverseJoinColumns = @JoinColumn(name = "gravyid"))
-    private Collection<GravyRecipe> gravyRecipes;
-
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "user&custom", joinColumns = @JoinColumn(name = "userid"),
-            inverseJoinColumns = @JoinColumn(name = "customid"))
-    private Collection<CustomRecipe> customRecipes;
 
     public User(String username, String password, String email) {
         this.username = username;
