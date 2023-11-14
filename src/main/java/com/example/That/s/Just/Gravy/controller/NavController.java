@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+//this is the controller for the navbar in the application
 @Controller
 public class NavController {
     @GetMapping("/index")

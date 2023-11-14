@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link th:href="@{/styles/cssandjs/style.css}" rel="stylesheet"/>
+
 </head>
+
+
+<body id="gravybatch" th:style=" 'background: url(images/run_gravy.jpg)'">
 <h1 id="main-header">THAT'S JUST GRAVY!!!</h1>
 <h2>The #1 website for all Gravy Lovers and their knowledge of Gravy</h2>
-<p>Below you will find our tip of the day!</p>
-
-
-<body>
 <div th:replace="~{fragments/navigation :: navigation}"></div>
 </body>
 </html>
+
+<!--- th:src="@{images/run_gravy.jpg}" --->

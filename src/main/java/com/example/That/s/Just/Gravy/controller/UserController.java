@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.HashMap;
 import java.util.Map;
 
+//this will allow the user to sign up into the application
 @Controller
 public class UserController {
     @Autowired

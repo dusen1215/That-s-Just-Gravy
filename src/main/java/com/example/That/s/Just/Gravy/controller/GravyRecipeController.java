@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.HashMap;
 import java.util.Map;
 
+//allows confirmation and saves the user's input for their found Gravy recipes
 @Controller
 public class GravyRecipeController {
     @Autowired

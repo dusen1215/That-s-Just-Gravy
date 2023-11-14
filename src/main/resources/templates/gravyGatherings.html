@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link th:href="@{/styles/cssandjs/style.css}" rel="stylesheet" />
 </head>
 <h1 id="main-header">DO YOU HAVE A SOCIAL GATHERING OR WANT TO BRANCH OUT TO YOUR FELLOW GRAVY LOVERS?</h1>
 <h2>Please submit form here and we will review and see what we can do to assist you</h2>
 <p>Below you will find our tip of the day!</p>
-<label for="freeform">Tell us how you heard about HubSpot:</label>
+<label for="freeform">Please email us your details!:</label>
 <br> 
 <textarea id="freeform" name="freeform" rows="4" cols="50"></textarea>
 <body>
 <div th:replace="~{fragments/navigation :: navigation}"></div>
+<br>
+<br>
+<input type="submit" name="button" id="buttonTime" onclick="theGather()" value="See what's here!">
+<div id="thevid">
+    <h1> GRAVY HODOWN in Lousiville, Kentucky </h1>
+    <br>
+    <br>
+    <h1> GRAVY TASTING in Napa, California </h1>
+    <br>
+    <br>
+    <h1> GRAVY CONSTRUCTION in Hershey,PA </h1>
+
+
+</div>
+<script type="text/javascript" th:src="@{/js/cssandjs/script.js}"></script>
 </body>
 </html>
