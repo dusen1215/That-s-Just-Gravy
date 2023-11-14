@@ -55,6 +55,26 @@ public class UserServices {
         }
     }
 
+    /*@Override
+    @Transactional
+    public UserDTO findUserByEmail(String email) {
+
+        UserDTO userOptional = userRepository.findUserByEmail(email);
+
+        if(userOptional.isPresent()) {
+
+            ModelMapper modelMapper = new ModelMapper();
+            modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+
+            UserDTO userDTO = modelMapper.map(userOptional.get(), UserDTO.class);
+
+            return userDTO;
+        }
+        else
+            throw new RuntimeException("User does not exist");
+
+    }*/
+
     public void deleteUser(long id) {
         userRepository.deleteById(id);
     }
