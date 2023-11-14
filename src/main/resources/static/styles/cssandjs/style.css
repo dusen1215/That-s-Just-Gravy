@@ -1,0 +1,24 @@
+body{
+    background-color:brown;
+    background-image: url("static/images/run_gravy.jpg");
+}
+
+#main-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:azure;
+}
+
+#winner{
+    position: absolute;
+    margin-left: 500px;
+    font-size:50px;
+}
+
+#thevid{
+    display:none;
+}
+
+#gravybatch{
+    background-repeat: no-repeat;
+}
+
