@@ -1,7 +1,6 @@
-package repository;
+package com.jordandusenbury.That.s.Just.Gravy.repository;
 
 import com.jordandusenbury.That.s.Just.Gravy.entity.User;
-import com.jordandusenbury.That.s.Just.Gravy.repository.UserRepository;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class UserRepositoryTest {
+class UserRepositoryTest {
 
     @Autowired
     UserRepository userRepository;
@@ -30,4 +29,5 @@ public class UserRepositoryTest {
         Assertions.assertTrue(userRepository.count() > 0);
     }
 }
+
 
