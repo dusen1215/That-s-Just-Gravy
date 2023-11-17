@@ -1,0 +1,18 @@
+Project Management 
+8a. SDLC 
+  Discovery - I love gravy, and there is not enough places online I feel for people to just freely express their love for the heavenly sauce
+  Design - I wanted a simple view with pictures of gravy and a design that feels homey to users
+  Development - I started to work on being able to accept users' inputs into the mysql database
+  Testing - I demonstrated testing through JUNIT and by putting in my own samples into the forms the application provides 
+  Release - Once design is followed through to our test audience's satisfaction then we will 
+  Maintenance - We have procedures once that phase meets 
+
+8b. Requirements Analysis
+ User will have a place to share recipes and learn about gravy induced events around the country 
+
+8c. Agile Principles and Scrum Framework 
+ individuals and interactions - 
+	Each individual will interact with the website in terms of sharing their own experiences with Gravy, 
+ working software - the working software will be programs including but not limited to: Hibernate, MySQL, Spring Boot, Java, 	Javascript, etc. ,
+ customer collaboration - feedback from customers shall be how the website is presented and a possible expansion or 	addition to our input forms and maybe more information on gravy, 
+ responding to change - we want to hear about our customers' experience with their gravy gatherings. we will take the 	feedback and the criticism to apply what we have learned to newer reaches.
