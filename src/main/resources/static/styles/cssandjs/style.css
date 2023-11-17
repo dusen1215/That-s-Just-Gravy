@@ -22,3 +22,10 @@ body{
     background-repeat: no-repeat;
 }
 
+#thick{
+    font-size:70px;
+    font-family: "Agency FB";
+    color:maroon;
+    font-weight: bold;
+    text-decoration: underline;
+}
